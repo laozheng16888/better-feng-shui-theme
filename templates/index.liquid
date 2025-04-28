@@ -1,0 +1,76 @@
+{% layout 'theme' %}
+
+<div id="welcome-gate" class="section welcome-section">
+  <div class="welcome-background">
+    <div class="welcome-content">
+      <h1>Welcome to Better Feng Shui</h1>
+      <h2>Unlock the Mysteries of Your Destiny</h2>
+      <a href="#fortune" class="mystic-button">Step into the Mystic Realm</a>
+    </div>
+  </div>
+</div>
+
+<div id="fortune" class="section fortune-section">
+  <div class="fortune-title">
+    <h2>My Daily Feng Shui Reading</h2>
+  </div>
+  <div class="fortune-content">
+    <p>Enter your birthday and place of birth to unlock today's personalized fortune.</p>
+    <a href="#" class="fortune-button">Start My Reading</a>
+  </div>
+</div>
+
+<div id="treasures" class="section treasures-section">
+  <div class="treasures-title">
+    <h2>Mystic Treasures by Purpose</h2>
+  </div>
+  <div class="treasure-grid">
+    <!-- 12 treasure boxes placeholder -->
+    {% for i in (1..12) %}
+    <div class="treasure-box">
+      <p>Treasure {{ i }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="tools" class="section tools-section">
+  <div class="tools-title">
+    <h2>Your Personalized Tools</h2>
+  </div>
+  <div class="tools-grid">
+    <!-- 8 tools placeholder -->
+    {% for i in (1..8) %}
+    <div class="tool-item">
+      <p>Tool {{ i }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="wisdom" class="section wisdom-section">
+  <div class="wisdom-title">
+    <h2>Wisdom & Stories</h2>
+  </div>
+  <div class="wisdom-content">
+    <p>Read ancient wisdom and modern interpretations about Feng Shui and Destiny.</p>
+  </div>
+</div>
+
+<div id="destiny-hall" class="section destiny-section">
+  <div class="destiny-title">
+    <h2>My Destiny Center</h2>
+  </div>
+  <div class="destiny-content">
+    <p>Log in to track your fortune history and collect mystical items.</p>
+  </div>
+</div>
+
+<div id="soul" class="section soul-section">
+  <div class="soul-title">
+    <h2>Invite & Unlock Mystical Rewards</h2>
+  </div>
+  <div class="soul-content">
+    <p>Invite friends and get mystical points and rewards!</p>
+  </div>
+</div>
