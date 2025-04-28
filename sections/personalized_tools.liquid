@@ -1,0 +1,12 @@
+<section class="personalized-tools">
+  <div class="tools-title">
+    <h2>Your Personalized Tools</h2>
+  </div>
+  <div class="tools-grid">
+    {% for i in (1..8) %}
+      <div class="tool-item">
+        <p>Tool {{ i }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
