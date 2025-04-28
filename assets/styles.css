@@ -1,0 +1,93 @@
+/* Better Feng Shui - Theme Stylesheet */
+
+body {
+    background-color: #013220;
+    font-family: 'Trajan Pro', serif;
+    color: #f5f5dc;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.welcome-background {
+    background: url('your_welcome_background_image_url_here') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.welcome-content h1 {
+    font-size: 48px;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.welcome-content h2 {
+    font-size: 24px;
+    color: #fff8dc;
+    margin-bottom: 40px;
+}
+
+.mystic-button {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.mystic-button:hover {
+    background-color: #ffd700;
+    color: #013220;
+}
+
+.treasure-grid, .tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.treasure-box, .tool-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffd700;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #f5f5dc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-content h1 {
+        font-size: 32px;
+    }
+
+    .welcome-content h2 {
+        font-size: 18px;
+    }
+
+    .mystic-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .treasure-box, .tool-item {
+        width: 120px;
+        height: 120px;
+    }
+}
